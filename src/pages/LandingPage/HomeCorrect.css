@@ -1,0 +1,122 @@
+.home-main {
+    display: grid;
+    grid-template-columns: 39% 61%;
+    grid-template-rows: 1fr;
+    grid-template-areas:"left right";
+}
+
+.home-left-area {
+    grid-area: left;
+    background-color: aqua;
+    background-image: url("./leftframe1.png");
+    background-size: contain;
+    height: 485px;
+}
+
+
+.home-right-area {
+    grid-area: right;
+    margin-left: 15%;
+    margin-top: 85px;
+}
+
+.profile-container-for-home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    width: 25%;
+    height: 84px;
+}
+
+.nav-container-for-home {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    height: 84px;
+}
+.nav-items-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2%;
+    width: 75%;
+}
+.nav-items-container ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2%;
+    width: 100%; /* Change width to 100% */
+}
+.nav-items-container ul li {
+    list-style: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    flex: 1; /* Add this */
+    text-align: center;
+    text-decoration: none;
+}
+.navbar-link-style{
+    text-decoration: none;
+    color: #4C0AA3;
+    list-style: none;
+}
+
+
+.signin-signup-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    width: 47%;
+    height: 62px;
+    background: #FFFFFF;
+    border: 3px solid #2D0660;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+
+    color: #2D0660;
+}
+
+.signin-signup-button:hover {
+    background: linear-gradient(96.64deg, #9747FF 0%, #6E26CD 54.67%, #4C0AA3 100%);
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+    border: none;
+    color: #FFFFFF;
+}
+
+.welcome-heading {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 96px;
+
+    color: #3C097D;
+}
+
+.welcome-content {
+    margin-top: 1%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+
+    color: #4C0AA3;
+}

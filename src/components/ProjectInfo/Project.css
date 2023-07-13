@@ -1,0 +1,7 @@
+.proj{
+        flex: 4;
+        background-color: aliceblue;
+        margin-top: 75px;
+        height: calc(100vh - 75px);
+        overflow-y: hidden;
+}

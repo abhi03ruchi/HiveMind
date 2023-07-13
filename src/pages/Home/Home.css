@@ -1,0 +1,32 @@
+.home{
+    flex:4;
+    background-color: aliceblue;
+    margin-top: 5px;
+    overflow-y:hidden;
+}
+.homeWrapper{
+    padding: 20px;
+}
+.section1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* background-color: palevioletred; */
+}
+.section1 .date{
+    font-size: 18px;
+}
+.section1 .time{
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+.section2{
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}

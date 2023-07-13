@@ -1,0 +1,77 @@
+.schedule{
+    flex: 4;
+    /* background-color: white; */
+    height: 65vh;
+}
+.schedule  .header{
+    display: flex;
+    justify-content:flex-start;
+    margin-left: 40px;
+    align-items: center;
+    padding: 5px;
+    font-size: 30px;
+    /* background-color: rgb(168, 168, 168); */
+}
+.right-content {
+    padding: 10px 40px;
+    overflow-y: auto;
+    height: 100%;
+    flex: 1;
+}
+.task-box {
+    position: relative;
+    border-radius: 12px;
+    width: 100%;
+    margin: 20px 0;
+    padding: 16px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px 0px rgba(235, 235, 235, 1);
+}
+.task-box:hover {
+    transform: scale(1.02);
+}
+.time {
+    margin-bottom: 6px;
+    opacity: 0.4;
+    font-size: 10px;
+}
+.task-name {
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.6;
+}
+.yellow {
+    background-color:  #fff1d6;
+}
+.blue {
+    background-color:  #d3e6ff;
+}
+.red {
+    background-color:  #ffd9d9;
+}
+.green {
+    background-color: #daffe5;
+}
+.more-button {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #8e92a4;
+    box-shadow: 0 -4px 0 0 #8e92a4, 0 4px 0 0 #8e92a4;
+    opacity: 0.4;
+    right: 20px;
+    top: 30px;
+    cursor: pointer;
+}
+.members {
+    display: flex;
+    margin-top: 14px;
+}
+.members img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 4px;
+    object-fit: cover;
+}
