@@ -18,16 +18,18 @@ export default function AlertDialog(props) {
   return (
     <div>
       <Button onClick={handleClickOpen} 
-      size="small" 
-      sx={{ backgroundColor: "none", color: "black", "&:hover": {color: "white" } }} 
+      variant="outlined"
+      align="center"
+      color='secondary'
+      sx={{ margin: "5px", width: "300px", color: "#8152BD", height: "48px" }} 
       disableTouchRipple>
         {props.button}
       </Button>
       <Dialog
-        sx={{backgroundColor:"rgba(255, 255, 255, 0.6)"}}
+        sx={{backgroundColor:"rgba(0,0,0, 0.6)"}}
         PaperProps={{
           style:{
-            backgroundColor:"#1C1A1A",
+            backgroundColor:"#E9E7FD",
             boxShadow:"none"
             
           }
@@ -38,14 +40,14 @@ export default function AlertDialog(props) {
         aria-describedby="alert-dialog-description"
       >
         
-        <DialogTitle id="alert-dialog-title" sx={{color:'white',fontFamily:'Montserrat'}} >
+        <DialogTitle id="alert-dialog-title" sx={{color:"#8152BD",fontFamily:'Montserrat'}} >
           <h2>{props.title}</h2>
         </DialogTitle>
-        <hr style={{marginTop:"1px", border:"1px solid white"}}/>
-        <DialogContent id="alert-dialog-description" sx={{color:'white',overflowY:"hidden"}} >
+        <hr style={{marginTop:"1px", border:"1px solid #8152BD"}}/>
+        <DialogContent id="alert-dialog-description" sx={{color:"#8152BD",overflowY:"hidden"}} >
           <p>{props.content}</p>
         </DialogContent>
-        <DialogContent sx={{color:'white',marginLeft:1,overflowX:"hidden"}}>
+        <DialogContent sx={{color:"#8152BD",marginLeft:1,overflowX:"hidden"}}>
           {props.children}
         </DialogContent>
         

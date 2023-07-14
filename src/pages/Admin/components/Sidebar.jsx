@@ -25,6 +25,7 @@ export default function Sidebar() {
           button="New Project"
           content="Unleash the power of words. Spark discussion, share your insights."> 
           <TextField 
+           variant='outlined'
            id="outlined-textarea"
            label="Project Name"
            placeholder="Project Name"
@@ -32,6 +33,7 @@ export default function Sidebar() {
            maxRows={3}
            fullWidth />
            <br/>
+           <Typography sx={{marginTop:3,marginBottom:3}}>Choose assignees</Typography>
            <FormGroup>
       <FormControlLabel control={<Checkbox />} label={user[0].name}  />
       <FormControlLabel control={<Checkbox />} label={user[1].name} />

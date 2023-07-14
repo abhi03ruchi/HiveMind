@@ -23,11 +23,12 @@ export default function AdminProject() {
                             button="New Task"
                             content="Unleash the power of words. Spark discussion, share your insights.">
                             <TextField
+                                variant='outlined'
                                 id="outlined-textarea"
                                 label="Task Name"
                                 placeholder="Task Name"
                                 multiline
-                                maxRows={3}
+                                maxRows={4}
                                 fullWidth />
                             <br />
 
