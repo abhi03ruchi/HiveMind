@@ -1,5 +1,6 @@
 .App{
     height: 100vh;
+    background-color: #f3f6fd;
 }
 .container{
     display: flex;

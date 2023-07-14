@@ -22,9 +22,9 @@ function NavbarForHome() {
 
       <div className="nav-items-container">
         <ul>
-          <li><Link to="/" className="navbar-link-style">Home</Link></li>
-          <li><Link to="/leaderboard" className="navbar-link-style">Leaderboard</Link></li>
-          <li><Link to="/" className="navbar-link-style">Home</Link></li>
+          <li><Link to="/landingPage" className="navbar-link-style">Home</Link></li>
+          {/* <li><Link to="/leaderboard" className="navbar-link-style">Leaderboard</Link></li>
+          <li><Link to="/" className="navbar-link-style">Home</Link></li> */}
         </ul>
       </div>
 

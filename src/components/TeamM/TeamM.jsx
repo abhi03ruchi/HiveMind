@@ -5,9 +5,9 @@ export default function TeamM() {
         <div className='teamM'>
                 <main>
                     <header>
-                        <h4>Team Members</h4>
-                        <p>7 Online Now</p>
-                        <p>View all members</p>
+                        <h1>Team Members</h1>
+                        {/* <p>7 Online Now</p>
+                        <p>View all members</p> */}
                     </header>
 
                     <section>
@@ -20,7 +20,7 @@ export default function TeamM() {
                         <div className="card">
                             <img src="https://randomuser.me/api/portraits/men/30.jpg" alt="Authors photo" className="card__avatar" />
                             <p className="card__name">TK Samuels</p>
-                            <p className="card__country">Australia</p>
+                            <p className="card__country">India</p>
                             <p className="card__article">Different Approaches to Responsive CSS Motion Path</p>
                         </div>
                         <div className="card">
@@ -42,20 +42,21 @@ export default function TeamM() {
                             <p className="card__article">Updates to Form Controls and Focus</p>
                         </div>
                         <div className="card">
-                            <img src="https://randomuser.me/api/portraits/women/62.jpg" alt="Authors photo" className="card__avatar" />
-                            <p className="card__name">Tania Jefferies</p>
-                            <p className="card__country">France</p>
+                            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Authors photo" className="card__avatar" />
+                            <p className="card__name">Eli Cohen</p>
+                            <p className="card__country">Israel</p>
                             <p className="card__article">Create Diagonal Layouts Like It’s 2020</p>
                         </div>
                         <div className="card">
-                            <img src="https://randomuser.me/api/portraits/women/62.jpg" alt="Authors photo" className="card__avatar" />
-                            <p className="card__name">Tania Jefferies</p>
-                            <p className="card__country">France</p>
+                            <img src="https://randomuser.me/api/portraits/women/35.jpg" alt="Authors photo" className="card__avatar" />
+                            <p className="card__name">Sara Khan</p>
+                            <p className="card__country">Japan</p>
                             <p className="card__article">Create Diagonal Layouts Like It’s 2020</p>
                         </div>
                         <div className="card">
-                            <img src="https://randomuser.me/api/portraits/women/62.jpg" alt="Authors photo" className="card__avatar" />
-                            <p className="card__name">Tania Jefferies</p>
+                            {/* <img src="https://images.pexels.com/photos/1036627/pexels-photo-1036627.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Authors photo" className="card__avatar" /> */}
+                            <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Authors photo" className="card__avatar" />
+                            <p className="card__name">Annabelle Rio</p>
                             <p className="card__country">France</p>
                             <p className="card__article">Create Diagonal Layouts Like It’s 2020</p>
                         </div>

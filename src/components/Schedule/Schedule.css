@@ -25,7 +25,7 @@
     margin: 20px 0;
     padding: 16px;
     cursor: pointer;
-    box-shadow: 2px 2px 4px 0px rgba(235, 235, 235, 1);
+    box-shadow: 0 2px 6px 0 rgba(136,148,171,.2),0 24px 20px -24px rgba(71,82,107,.1);
 }
 .task-box:hover {
     transform: scale(1.02);
@@ -41,7 +41,7 @@
     opacity: 0.6;
 }
 .yellow {
-    background-color:  #fff1d6;
+    background-color:   #daffe5;
 }
 .blue {
     background-color:  #d3e6ff;
@@ -50,7 +50,7 @@
     background-color:  #ffd9d9;
 }
 .green {
-    background-color: #daffe5;
+    background-color:  #fff1d6;
 }
 .more-button {
     position: absolute;
