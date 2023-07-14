@@ -7,6 +7,8 @@ import {
 } from "react-router-dom";
 import TeamPage from './pages/Team/Team';
 import ProjectPage from './pages/Project/Project';
+import WorkLogin from './pages/Login/WorkLogin';
+import Register from './pages/Login/Register';
 import LandingPage from './pages/LandingPage/HomeCorrect';
 const router = createBrowserRouter([
   {
@@ -24,6 +26,14 @@ const router = createBrowserRouter([
   {
     path: "landingPage",
     element: <LandingPage />,
+  },
+  {
+    path: "login",
+    element: <WorkLogin />,
+  },
+  {
+    path: "register",
+    element: <Register />,
   },
 
 ]);
