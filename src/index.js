@@ -10,11 +10,27 @@ import ProjectPage from './pages/Project/Project';
 import WorkLogin from './pages/Login/WorkLogin';
 import Register from './pages/Login/Register';
 import LandingPage from './pages/LandingPage/HomeCorrect';
+import AdminAnalytics from './pages/Admin/AdminAnalytics';
+import AdminTeam from './pages/Admin/AdminTeam';
+import AdminProject from './pages/Admin/AdminProject';
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
   },
+  {
+    path: "adminanalytics",
+    element: <AdminAnalytics />,
+  },  
+  {
+    path: "AdminTeam",
+    element: <AdminTeam />,
+  },
+  {
+    path: "AdminProject",
+    element: <AdminProject />,
+  },
+
   {
     path: "team",
     element: <TeamPage/>,
@@ -35,6 +51,7 @@ const router = createBrowserRouter([
     path: "register",
     element: <Register />,
   },
+
 
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
