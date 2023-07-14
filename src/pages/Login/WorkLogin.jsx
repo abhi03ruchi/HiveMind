@@ -5,15 +5,27 @@ import { GoogleButton } from 'react-google-button'
 import './login.css';
 
 import Login from './Login.png'
-
-
-
-
+import { UserAuth } from '../../Firebase/AuthContext';
+import useAuthState from "../../Firebase/hooks";
+import { auth } from "../../Firebase/firebase";
 
 function WorkLogin() {
-   
+    const {User,logOut} = UserAuth()
+    const {user, initializing} = useAuthState(auth);
 
-
+    const {googleSignIn} = UserAuth();
+    const handleGoogleSignIn = async () =>{
+          try{
+           await googleSignIn()
+          //  navigate("/feed")
+          }catch(error){
+              console.log(error);
+          }
+        }
+        if(initializing){
+          return("loading...");
+        }
+  
     return (
         <div>
             <div className="lcontainer glass">
@@ -32,7 +44,7 @@ function WorkLogin() {
                         <br/>
                     <p>~ Or ~</p>
                     <div className="Google-Button-cont">
-                        <GoogleButton class="google-button" />
+                        <GoogleButton class="google-button" onClick={handleGoogleSignIn}/>
                     </div>
 
                     <Typography variant="h6" color="white" className="register-link">Don't have an account ? <a href="register">Create Account !</a></Typography>

@@ -19,7 +19,7 @@ const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
   },
   [`& .${linearProgressClasses.bar}`]: {
     borderRadius: 5,
-    backgroundColor: theme.palette.mode === 'light' ? '#1a90ff' : '#308fe8',
+    backgroundColor: theme.palette.mode === 'light' ? "#8152BD" : "#E9E7FD",
   },
 }));
 
@@ -60,7 +60,7 @@ export default function DenseTable() {
                 {row.taskname}
               </TableCell>
               <TableCell align="left">{row.status}</TableCell>
-              <TableCell align="left"> <BorderLinearProgress variant="determinate" value={row.progress} /></TableCell>
+              <TableCell align="left"> <BorderLinearProgress variant="determinate" sx={{color:"#E9E7FD"}} value={row.progress} /></TableCell>
               <TableCell align="right">{row.duedate}</TableCell>
               <TableCell align="right"><AvatarGroup total={row.extra}>
                 <Avatar alt="Remy Sharp" src={row.assignee} />

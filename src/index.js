@@ -13,7 +13,9 @@ import LandingPage from './pages/LandingPage/HomeCorrect';
 import AdminAnalytics from './pages/Admin/AdminAnalytics';
 import AdminTeam from './pages/Admin/AdminTeam';
 import AdminProject from './pages/Admin/AdminProject';
+import { AuthContextProvider } from './Firebase/AuthContext';
 const router = createBrowserRouter([
+  
   {
     path: "/",
     element: <App />,
@@ -56,6 +58,8 @@ const router = createBrowserRouter([
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <RouterProvider router={router}/>
+  <AuthContextProvider>
+      <RouterProvider router={router}/>
+  </AuthContextProvider>
 );
 

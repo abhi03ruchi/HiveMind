@@ -31,8 +31,8 @@ function NavbarForHome() {
      
 
       <div className="profile-container-for-home">
-        <button className="signin-signup-button" onClick={googleAuth}>Sign Up</button>
-        <button className="signin-signup-button" onClick={googleAuth}>Sign In</button>
+        <button className="signin-signup-button" ><a href="register">Sign Up</a></button>
+        <button className="signin-signup-button" ><a href="login">Sign In</a></button>
       </div>
     </div>
   );
