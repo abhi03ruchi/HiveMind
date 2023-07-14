@@ -6,9 +6,7 @@ export default function Topbar() {
   return (
     <div className="topbar">
       <div className="topbarWrapper">
-        <div className="topLeft">
-          <span className="logo">lamaadmin</span>
-        </div>
+          <span className="logo">HiveMind</span>
       </div>
     </div>
   );

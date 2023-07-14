@@ -1,8 +1,9 @@
 .home{
     flex:4;
-    background-color: aliceblue;
+    background-color: #f3f6fd;
     margin-top: 5px;
     overflow-y:hidden;
+    /* border-bottom: 5px solid  #FF69B4; */
 }
 .homeWrapper{
     padding: 20px;
@@ -16,10 +17,12 @@
     font-weight: 600;
     margin-top: 20px;
     margin-bottom: 20px;
-    /* background-color: palevioletred; */
+    color: #4C0AA3;
 }
 .section1 .date{
-    font-size: 18px;
+    font-size: 20px;
+    color:  #FF69B4;
+    font-weight: 500;
 }
 .section1 .time{
     font-size: 23px;

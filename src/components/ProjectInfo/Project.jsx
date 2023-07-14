@@ -1,9 +1,9 @@
 import React from 'react';
 import './Project.css';
 
-function ProjectBox({ date, backgroundColor, contentHeader, contentSubheader, progress, participants, daysLeft , daysLeftColor }) {
+function ProjectBox({ boxshadow, date, backgroundColor, contentHeader, contentSubheader, progress, participants, daysLeft, daysLeftColor }) {
     return (
-        <div className="project-box" style={{ backgroundColor }}>
+        <div className="project-box" style={{ backgroundColor, boxShadow: boxshadow }}>
             <div className="project-box-header">
                 <span>{date}</span>
                 <div className="more-wrapper">
@@ -34,7 +34,7 @@ function ProjectBox({ date, backgroundColor, contentHeader, contentSubheader, pr
             <div className="box-progress-wrapper">
                 <p className="box-progress-header">Progress</p>
                 <div className="box-progress-bar">
-                    <span className="box-progress" style={{ width: `${progress}%`, backgroundColor:daysLeftColor }}></span>
+                    <span className="box-progress" style={{ width: `${progress}%`, backgroundColor: daysLeftColor }}></span>
                 </div>
                 <p className="box-progress-percentage" style={{ color: daysLeftColor }}>{progress}%</p>
             </div>
@@ -43,7 +43,7 @@ function ProjectBox({ date, backgroundColor, contentHeader, contentSubheader, pr
                     {participants.map((participant, index) => (
                         <img key={index} src={participant} alt="participant" />
                     ))}
-                    <button className="add-participant" style={{ color:daysLeftColor  }}>
+                    <button className="add-participant" style={{ color: daysLeftColor }}>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="12"
@@ -85,6 +85,7 @@ function ProjectSection() {
                         ]}
                         daysLeft="2"
                         daysLeftColor="#f6a609"
+                        boxshadow="0 2px 6px 0 rgba(136, 148, 171, .2), 0 24px 20px -24px rgba(71, 82, 107, .1)"
                     />
                 </div>
                 <div className="project-box-wrapper">
@@ -100,9 +101,10 @@ function ProjectSection() {
                         ]}
                         daysLeft="2"
                         daysLeftColor="#8c7ae6"
+                        box-shadow="0 2px 6px 0 rgba(136,148,171,.2),0 24px 20px -24px rgba(71,82,107,.1)"
                     />
                 </div>
-                
+
                 <div className="project-box-wrapper">
                     <ProjectBox
                         date="December 10, 2020"
@@ -116,6 +118,7 @@ function ProjectSection() {
                         ]}
                         daysLeft="2"
                         daysLeftColor="black"
+                        box-shadow="0 2px 6px 0 rgba(136,148,171,.2),0 24px 20px -24px rgba(71,82,107,.1)"
                     />
                 </div>
                 <div className="project-box-wrapper">
@@ -131,6 +134,7 @@ function ProjectSection() {
                         ]}
                         daysLeft="2"
                         daysLeftColor="#ff6b81"
+                        box-shadow="0 2px 6px 0 rgba(136,148,171,.2),0 24px 20px -24px rgba(71,82,107,.1)"
                     />
                 </div>
                 <div className="project-box-wrapper">
@@ -146,6 +150,7 @@ function ProjectSection() {
                         ]}
                         daysLeft="2"
                         daysLeftColor="#00b894"
+                        box-shadow="0 2px 6px 0 rgba(136,148,171,.2),0 24px 20px -24px rgba(71,82,107,.1)"
                     />
                 </div>
                 <div className="project-box-wrapper">
@@ -161,6 +166,7 @@ function ProjectSection() {
                         ]}
                         daysLeft="2"
                         daysLeftColor="#1e90ff"
+                        box-shadow="0 2px 6px 0 rgba(136,148,171,.2),0 24px 20px -24px rgba(71,82,107,.1)"
                     />
                 </div>
             </div>
@@ -171,6 +177,10 @@ function ProjectSection() {
 export default function TeamM() {
     return (
         <div className='proj'>
+              <header>
+                        <h1>Ongoing Projects</h1>
+              </header>
+
             <ProjectSection />
             {/* <MessagesSection /> */}
 

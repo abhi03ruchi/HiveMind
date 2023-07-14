@@ -1,22 +1,25 @@
 .home-main {
     display: grid;
-    grid-template-columns: 39% 61%;
+    grid-template-columns: 45% 55%;
     grid-template-rows: 1fr;
     grid-template-areas:"left right";
+    height: 69vh;
+    margin-top: 60px;
 }
 
 .home-left-area {
     grid-area: left;
-    background-color: aqua;
+    /* background-color: aqua; */
     background-image: url("./leftframe1.png");
     background-size: contain;
-    height: 485px;
+    height: 420px;
 }
 
 
 .home-right-area {
     grid-area: right;
-    margin-left: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-top: 85px;
 }
 
@@ -33,21 +36,22 @@
 .nav-container-for-home {
     display: flex;
     justify-content: space-between;
-    padding: 0px;
+    padding: 12px;
     height: 84px;
+    border-top: 6px solid #FF69B4;
 }
 .nav-items-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-start;
+    /* align-items: center; */
     gap: 2%;
     width: 75%;
 }
 .nav-items-container ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     gap: 2%;
     width: 100%; /* Change width to 100% */
@@ -60,13 +64,28 @@
     font-size: 18px;
     line-height: 30px;
     flex: 1; /* Add this */
-    text-align: center;
+    text-align: left;
     text-decoration: none;
 }
+/* .nav-items-container ul li:hover{
+    color: #4C0AA3;
+    background-color: palevioletred;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+} */
 .navbar-link-style{
     text-decoration: none;
-    color: #4C0AA3;
+    color:  #FF69B4;
+    font-size: 27px;
+    font-weight: 600;
     list-style: none;
+}
+.navbar-link-style:hover{
+    color: #4C0AA3;
+    /* background-color:  #FF69B4; */
+    padding: 5px;
+
+    /* line color */
+    border-bottom: 3px solid #4C0AA3;
 }
 
 
@@ -105,6 +124,7 @@
     font-style: normal;
     font-weight: 800;
     font-size: 64px;
+    text-align: justify;
     line-height: 96px;
 
     color: #3C097D;
@@ -117,6 +137,8 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 36px;
+    text-align: justify;
+    /* background-color: green; */
 
-    color: #4C0AA3;
+    color:  #FF69B4;
 }

@@ -28,7 +28,7 @@ const FloatBar = () => {
             </div>
 
             <div className="page-content">
-                <div className="header">Today Tasks</div>
+                <div className="header">Today's Tasks</div>
                 <div className="content-categories">
                     <div className="label-wrapper">
                         <input
@@ -69,19 +69,6 @@ const FloatBar = () => {
                             Upcoming
                         </label>
                     </div>
-                    {/* <div className="label-wrapper">
-                        <input
-                            className="nav-item"
-                            name="nav"
-                            type="radio"
-                            id="opt-4"
-                            checked={activeCategory === 'opt-4'}
-                            onChange={() => handleCategoryChange('opt-4')}
-                        />
-                        <label className="category" htmlFor="opt-4">
-                            Links
-                        </label>
-                    </div> */}
                 </div>
 
                 <div className="tasks-wrapper">
